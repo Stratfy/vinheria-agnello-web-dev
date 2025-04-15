@@ -71,4 +71,12 @@ switch (true){
   }
 
 
-  
+// Exercício 4 - 50 repetições
+function exercicio4(){
+  for(var i = 0; i < 50; i++){
+    console.log("O valor é ",i+1)
+  }
+}
+
+exercicio4();
+
