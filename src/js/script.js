@@ -38,3 +38,34 @@ let num3 = 69;
 console.log(num1 >= num2);        //saída: false
 console.log(num2 >= num1);        //saída: true
 console.log(num2 >= num3);        //saída: true - pois o num2 é igual ao num3
+
+/*EXERCÍCIO 3*/
+//Exemplo
+let peso1 = 70;        //kg
+let altura1 = 1.75;    //metros
+
+//Fórmula do IMC
+let imc = Math.round((peso1 / (altura1 * altura1)) * 100) / 100;    /*foi necessário a utilização do 
+                                                                    método Math.round para arredondar 
+                                                                    até 2 casas decimais, sem ele ficaria, 
+                                                                    22.857142857142858*/
+//Verificação do índice de massa corporal (IMC)
+switch (true){
+    case (imc < 18.5):  
+      console.log("IMC:", imc);
+      console.log("Classificação: Abaixo do peso");
+      break;
+  
+    case (imc >= 18.5 && imc <= 24.9):
+      console.log("IMC:", imc);
+      console.log("Classificação: Peso ideal");
+      break;
+  
+    case (imc > 24.9):
+      console.log("IMC:", imc);
+      console.log("Classificação: Acima do peso");
+      break;
+  
+    default:
+      console.log("Valor de IMC inválido.");
+  }
