@@ -69,3 +69,6 @@ switch (true){
     default:
       console.log("Valor de IMC inválido.");
   }
+
+
+  
