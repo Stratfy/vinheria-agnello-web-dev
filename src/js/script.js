@@ -73,6 +73,7 @@ switch (true){
 
 // Exercício 4 - 50 repetições
 function exercicio4(){
+  console.log("Exercício 4 - for 50 vezes")
   for(var i = 0; i < 50; i++){
     console.log("O valor é ",i+1)
   }
@@ -83,6 +84,7 @@ exercicio4();
 //Exercício 5 - Login
 function exercicio5(){
   let usuario, senha;
+  alert("Exercício 5 - Login")
   usuario = prompt("Digite o nome de usúario");
   senha = prompt("Digite a senha");
   if(usuario == "admin" && senha == 1234 ){
@@ -92,6 +94,27 @@ function exercicio5(){
   }
 }
 
-exercicio5();
+//exercicio5();
 
-//
+//Exercício 6 - Média Notas
+function exercicio6(){
+  let notas = [];
+  let media = 0.0;
+  
+  alert("Exercício 6 - Média: Escreva 7 notas para obter sua média")
+  
+  for(var i = 0; i < 7;i++){
+    notas[i] = parseFloat(prompt(`Escreva a Nota ${i+1}`))
+    media = media + notas[i];
+
+  }
+  media = Math.round(media/7);
+  
+  if(media >= 6){
+    alert(`Aprovado! -- Média ${media}`)
+  }else{
+    alert(`Reprovado! -- Média ${media}`)
+  }
+  
+}
+
