@@ -79,14 +79,15 @@ function exercicio4(){
   }
 }
 
-exercicio4();
-
 //Exercício 5 - Login
 function exercicio5(){
+ //Declara as variáveis que serão usadas
   let usuario, senha;
   alert("Exercício 5 - Login")
+  //Atribui valores as variáveis por input do usuário
   usuario = prompt("Digite o nome de usúario");
   senha = prompt("Digite a senha");
+  //Verifica os valores adicionados
   if(usuario == "admin" && senha == 1234 ){
     alert("Usuário Autenticado")
   }else{
@@ -94,22 +95,24 @@ function exercicio5(){
   }
 }
 
-//exercicio5();
-
 //Exercício 6 - Média Notas
 function exercicio6(){
-  let notas = [];
+  //Declara as variáveis
+  let nota;
   let media = 0.0;
   
   alert("Exercício 6 - Média: Escreva 7 notas para obter sua média")
   
+  //Laço para atribuir as notas e as somar na média
   for(var i = 0; i < 7;i++){
-    notas[i] = parseFloat(prompt(`Escreva a Nota ${i+1}`))
-    media = media + notas[i];
+    nota = parseFloat(prompt(`Escreva a Nota ${i+1}`))
+    media = media + nota;
 
   }
+  //Calcula a média e arrendonda o valor 
   media = Math.round(media/7);
-  
+ 
+  //Julga a média e retorna a a aprovação
   if(media >= 6){
     alert(`Aprovado! -- Média ${media}`)
   }else{
@@ -117,4 +120,9 @@ function exercicio6(){
   }
   
 }
+
+//Executa os exercícios, já que foram feitos como funções
+exercicio4();
+exercicio5();
+exercicio6();
 
