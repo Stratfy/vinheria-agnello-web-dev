@@ -121,8 +121,21 @@ function exercicio6(){
   
 }
 
+//Exercício 9 - String var
+function exercicio9(){
+  //Declara a váriavel como uma String vazia
+  let variavel = "";
+  //Atribui um novo valor da variável como o float dela (Casting)
+  variavel = parseFloat(variavel);
+  //Retorna o tipo da variável (number)
+  alert(`Exercício 9 - String to float\nTipo: ${typeof variavel}`)
+  console.log(`Exercício 9 - String to float\nTipo: ${typeof variavel}`)
+}
+
+
+
 //Executa os exercícios, já que foram feitos como funções
 exercicio4();
 exercicio5();
 exercicio6();
-
+exercicio9();
