@@ -71,7 +71,7 @@ switch (true){
   }
 
 
-// Exercício 4 - 50 repetições
+/*EXERCÍCIO 4 - 50 repetições*/
 function exercicio4(){
   console.log("Exercício 4 - for 50 vezes")
   for(var i = 0; i < 50; i++){
@@ -79,7 +79,7 @@ function exercicio4(){
   }
 }
 
-//Exercício 5 - Login
+/*EXERCÍCIO 5 - Login*/
 function exercicio5(){
  //Declara as variáveis que serão usadas
   let usuario, senha;
@@ -95,7 +95,7 @@ function exercicio5(){
   }
 }
 
-//Exercício 6 - Média Notas
+/*EXERCÍCIO 6 - Média Notas*/
 function exercicio6(){
   //Declara as variáveis
   let nota;
@@ -121,7 +121,10 @@ function exercicio6(){
   
 }
 
-//Exercício 9 - String var
+/*EXERCÍCIO 7 - */
+
+
+/*EXERCÍCIO 9 - String var*/
 function exercicio9(){
   //Declara a váriavel como uma String vazia
   let variavel = "";
@@ -135,7 +138,9 @@ function exercicio9(){
 
 
 //Executa os exercícios, já que foram feitos como funções
+/*
 exercicio4();
 exercicio5();
 exercicio6();
 exercicio9();
+*/
