@@ -80,3 +80,18 @@ function exercicio4(){
 
 exercicio4();
 
+//Exercício 5 - Login
+function exercicio5(){
+  let usuario, senha;
+  usuario = prompt("Digite o nome de usúario");
+  senha = prompt("Digite a senha");
+  if(usuario == "admin" && senha == 1234 ){
+    alert("Usuário Autenticado")
+  }else{
+    alert("Falha na Autenticação")
+  }
+}
+
+exercicio5();
+
+//
