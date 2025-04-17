@@ -41,36 +41,47 @@ console.log(num2 >= num3);        //saída: true - pois o num2 é igual ao num3
 
 /*EXERCÍCIO 3*/
 //Exemplo
-let peso1 = 70;        //kg
-let altura1 = 1.75;    //metros
+function imc(){
+  let peso1 = parseFloat(document.getElementById('peso').value);        //kg, usa os valores do input com id peso
+  let altura1 = parseFloat(document.getElementById('altura').value);    //metros, usa os valores do input com id altura 
+  let resultado = document.getElementById('resultado'); // variavel para armazenar o resultado pelo id resultado
+  
+  
 
-//Fórmula do IMC
-let imc = Math.round((peso1 / (altura1 * altura1)) * 100) / 100;    /*foi necessário a utilização do 
-                                                                    método Math.round para arredondar 
-                                                                    até 2 casas decimais, sem ele ficaria, 
-                                                                    22.857142857142858*/
-//Verificação do índice de massa corporal (IMC)
-switch (true){
-    case (imc < 18.5):  
-      console.log("IMC:", imc);
-      console.log("Classificação: Abaixo do peso");
-      break;
-  
-    case (imc >= 18.5 && imc <= 24.9):
-      console.log("IMC:", imc);
-      console.log("Classificação: Peso ideal");
-      break;
-  
-    case (imc > 24.9):
-      console.log("IMC:", imc);
-      console.log("Classificação: Acima do peso");
-      break;
-  
-    default:
-      console.log("Valor de IMC inválido.");
+  //Fórmula do IMC
+  let imc = Math.round((peso1 / (altura1 * altura1)) * 100) / 100;    /*foi necessário a utilização do 
+                                                                      método Math.round para arredondar 
+                                                                      até 2 casas decimais, sem ele ficaria, 
+                                                                      22.857142857142858*/
+  //Verificação do índice de massa corporal (IMC)
+  switch (true){
+      case (imc < 18.5):  
+        console.log("IMC:", imc);
+        console.log("Classificação: Abaixo do peso");
+        resultado.textContent = `IMC: ${imc} Classificação: Abaixo do peso` // retorna em texto no site
+        break;
+    
+      case (imc >= 18.5 && imc <= 24.9):
+        console.log("IMC:", imc);
+        console.log("Classificação: Peso ideal");
+        resultado.textContent = `IMC: ${imc} Classificação: Peso ideal` // retorna em texto no site
+        break;
+    
+      case (imc > 24.9):
+        console.log("IMC:", imc);
+        console.log("Classificação: Acima do peso");
+        resultado.textContent = `IMC: ${imc} Classificação: Acima do peso` // retorna em texto no site
+        
+        break;
+
+      default:
+        console.log("Valor de IMC inválido.");
+        resultado.textContent = "Valores inválidos"; // retorna em texto no site
+    }
   }
 
 
+  
 /*EXERCÍCIO 4 - 50 repetições*/
 function exercicio4(){
   console.log("Exercício 4 - for 50 vezes")
@@ -78,6 +89,7 @@ function exercicio4(){
     console.log("O valor é ",i+1)
   }
 }
+
 
 /*EXERCÍCIO 5 - Login*/
 function exercicio5(){
