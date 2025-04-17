@@ -91,6 +91,8 @@ function exercicio4(){
 }
 
 
+
+
 /*EXERCÍCIO 5 - Login*/
 function exercicio5(){
  //Declara as variáveis que serão usadas
@@ -112,6 +114,7 @@ function exercicio6(){
   //Declara as variáveis
   let nota;
   let media = 0.0;
+  let resultadomedia = document.getElementById('resultadomedia'); // pega o elemento resultado media pelo id para apresenta lo na pagina
   
   alert("Exercício 6 - Média: Escreva 7 notas para obter sua média")
   
@@ -127,8 +130,10 @@ function exercicio6(){
   //Julga a média e retorna a a aprovação
   if(media >= 6){
     alert(`Aprovado! -- Média ${media}`)
+    resultadomedia.textContent = `Aprovado! -- Média ${media}`;
   }else{
     alert(`Reprovado! -- Média ${media}`)
+    resultadomedia.textContent = `Reprovado! -- Média ${media}`;
   }
   
 }
