@@ -140,20 +140,52 @@ function exercicio6(){
 
 /*EXERCÍCIO 7 - I/O*/
 function exercicio7(){
+  //Declara as variáveis e atribui o valor dos inputs da pagina por id
   let nome = document.getElementById('nome').value;
   let idade = document.getElementById('idade').value;
   let curso = document.getElementById('curso').value;
   let ano = document.getElementById('ano').value;
   let resultadoex7 = document.getElementById('resultadoex7')
 
+  //Verifica os valores
   if(nome != "" && idade != 0 && curso != "" && ano != 0){
+    //Output da mensagem
     resultadoex7.textContent = `Bem-vindo aluno(a) ${nome} de ${idade} anos, do ${ano}ºano do curso ${curso}`
   }else{
     resultadoex7.textContent = "Válores inválidos!"
   }
+}
 
+/*EXERCÍCIO 8 - Manipulações de uma string*/
+function exercicio8(){
+  let frase = "Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas.";
+  let um  = frase.indexOf("em");
+  let dois = frase.lastIndexOf("ia");
+  let tres = frase.indexOf("ciência");
+  let quatro = frase.indexOf("métodos");
+  let resultadoex8 = document.getElementById('resultadoex8');
+  resultadoex8.textContent = `--> Primeira posição "em": ${um}\n--> Última posição "ia": ${dois}\n--> Ocorrência de "ciência": ${tres}\n--> Ocorrência de "método": ${quatro} `
 
+}
 
+function indextexto() {
+  // Declara a frase
+  let frase = document.getElementById('textofrase').value;;
+  let busca = document.getElementById('chartexto').value;
+  let index = frase.indexOf(busca);
+
+  let resultadoindex = ""; // Inicializa corretamente como string
+
+  // Gera a linha com underscores até o índice
+  for (let i = 0; i < index; i++) {
+    resultadoindex += "_";
+  }
+
+  resultadoindex += "^"; // Marca a posição
+
+  // Atualiza o conteúdo com <br> para quebra de linha
+  let resultadoindextexto = document.getElementById('resultadoindextexto');
+  resultadoindextexto.innerHTML = `${frase}<br>${resultadoindex}<br>Index = ${index}`;
 }
 
 /*EXERCÍCIO 9 - String var*/
@@ -168,11 +200,3 @@ function exercicio9(){
 }
 
 
-
-//Executa os exercícios, já que foram feitos como funções
-/*
-exercicio4();
-exercicio5();
-exercicio6();
-exercicio9();
-*/

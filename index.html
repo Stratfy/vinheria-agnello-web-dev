@@ -42,7 +42,7 @@
 
                 <button onclick="imc()">Calcular IMC</button>
 
-                <div id="resultado"></div>
+                <div class="output" id="resultado"></div>
             </article>
 
             <article class="exercicio">
@@ -70,7 +70,7 @@
                 <h1>Exercício 6 - Média Notas</h1>
                 Exercício de média, faz uso de iteração for para registrar as notas e retorna a média como alert, se for menor que 6 é reprovado.<br>
                 <button onclick="exercicio6()">Executar exercício 6 - Média</button>
-                <div id="resultadomedia"></div>
+                <div class="output" id="resultadomedia"></div>
             </article>
 
             <article class="exercicio">
@@ -87,15 +87,44 @@
                 <label for="ano">Ano:</label>
                 <input type="number" id="ano" placeholder="Ex: 1" min="1" step="1">
                 
-                <p><button onclick="exercicio7()">Gerar mensagem</buttom></p>
+                <p><button onclick="exercicio7()">Gerar mensagem</button></p>
                 
-                <div id="resultadoex7"></div>
+                <div class="output" id="resultadoex7"></div>
 
 
             </article>
 
             <article class="exercicio">
-                <h1>Exercício 8 - </h1>
+                <h1>Exercício 8 - Métodos de String(Array de chars) </h1>
+                <p>
+                    <ul>
+                        <h2>Métodos aprendidos em aula</h2>
+                        <li><strong id="scomando">lenght</strong> - Retorna o número de caractéres de uma String</li>
+                        <li><strong id="scomando">indexOf()</strong> - Retorna o índice dos caractéres na String</li>
+                        <li><strong id="scomando">lastIndexOf()</strong> - Retorna o útimo índice dos caractéres na String</li>
+                        <li><strong id="scomando">slice(inicio,final)</strong> - Recorta a String</li>
+                    </ul>
+                    String que será manipulada: <strong id="snome">Tecnologia é um produto da ciência e da engenharia que 
+                    envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas.</strong><br>
+                </p>
+                <button onclick="exercicio8()">Gerar mensagem</button>
+                <pre class="output" id="resultadoex8"></pre>
+
+                <h2>Procurador no texto</h2>
+                <p>Representação gráfica do Método indexOf</p>
+                
+                <label for="textofrase">Insira a String que será manipulada:</label>
+                <input type="text" id="textofrase" placeholder="Digite a frase"><br>
+                <label for="chartexto">Insira os chars que serão buscados na string:</label>
+                <input type="text" id="chartexto" placeholder="Texto a buscar"><br>
+                <button onclick="indextexto()">Buscar</button>
+                
+                <p id="resultadoindextexto"></p>
+
+
+
+                
+
 
             </article>
                 

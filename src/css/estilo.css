@@ -24,18 +24,11 @@ ul{
     padding-left: 40px; /* garante espaço para a bolinha */
 }
 
-#resultado {
+.output {
     margin-top: 15px;
     font-weight: bold;
  }
- #resultadomedia {
-    margin-top: 15px;
-    font-weight: bold;
- }
- #resultadoex7 {
-    margin-top: 15px;
-    font-weight: bold;
- }
+
 
  label, input {
     display: block;
@@ -51,4 +44,8 @@ ul{
 
 #strue{
     color: green;
+}
+
+#scomando{
+    color: indigo;
 }
