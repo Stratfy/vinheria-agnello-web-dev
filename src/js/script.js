@@ -173,6 +173,7 @@ function indextexto() {
   let frase = document.getElementById('textofrase').value;;
   let busca = document.getElementById('chartexto').value;
   let index = frase.indexOf(busca);
+  
 
   let resultadoindex = ""; // Inicializa corretamente como string
 
