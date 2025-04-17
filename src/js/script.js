@@ -138,8 +138,23 @@ function exercicio6(){
   
 }
 
-/*EXERCÍCIO 7 - */
+/*EXERCÍCIO 7 - I/O*/
+function exercicio7(){
+  let nome = document.getElementById('nome').value;
+  let idade = document.getElementById('idade').value;
+  let curso = document.getElementById('curso').value;
+  let ano = document.getElementById('ano').value;
+  let resultadoex7 = document.getElementById('resultadoex7')
 
+  if(nome != "" && idade != 0 && curso != "" && ano != 0){
+    resultadoex7.textContent = `Bem-vindo aluno(a) ${nome} de ${idade} anos, do ${ano}ºano do curso ${curso}`
+  }else{
+    resultadoex7.textContent = "Válores inválidos!"
+  }
+
+
+
+}
 
 /*EXERCÍCIO 9 - String var*/
 function exercicio9(){
