@@ -111,31 +111,28 @@ function exercicio5(){
 
 /*EXERCÍCIO 6 - Média Notas*/
 function exercicio6(){
-  //Declara as variáveis
-  let nota;
-  let media = 0.0;
-  let resultadomedia = document.getElementById('resultadomedia'); // pega o elemento resultado media pelo id para apresenta lo na pagina
-  
-  alert("Exercício 6 - Média: Escreva 7 notas para obter sua média")
-  
-  //Laço para atribuir as notas e as somar na média
-  for(var i = 0; i < 7;i++){
-    nota = parseFloat(prompt(`Escreva a Nota ${i+1}`))
-    media = media + nota;
+  let totalNotas = 7; // Total de notas
+  let soma = 0.0; // Inicializa a soma das notas
+  let resultadomedia = document.getElementById('resultadomedia'); // Seleciona o elemento para exibir o resultado
+
+  alert(` Exercício 6 - Média\n Insira ${totalNotas} notas para calcular a sua média:`); // Alerta para o usuário inserir as notas
+
+  for (let i = 0; i < totalNotas; i++) {
+    let nota = parseFloat(prompt(`Digite a nota ${i + 1}:`)); // Solicita a nota ao usuário
+
+    if (isNaN(nota) || nota < 0 || nota > 10) { // Verifica se a nota é válida
+      alert("Nota inválida! Digite um valor entre 0 e 10.");
+      return; // Encerra a função se a nota for inválida
+    }
+
+    soma += nota; // Adiciona a nota à soma total
 
   }
-  //Calcula a média e arrendonda o valor 
-  media = Math.round(media/7);
- 
-  //Julga a média e retorna a a aprovação
-  if(media >= 6){
-    alert(`Aprovado! -- Média ${media}`)
-    resultadomedia.textContent = `Aprovado! -- Média ${media}`;
-  }else{
-    alert(`Reprovado! -- Média ${media}`)
-    resultadomedia.textContent = `Reprovado! -- Média ${media}`;
-  }
-  
+
+  let media = Math.round((soma / totalNotas) * 100) / 100; // Calcula a média e arredonda para 2 casas decimais
+  const status = media >= 6 ? "Aprovado" : "Reprovado"; // Verifica o status com base na média
+  alert(`Média: ${media}\nStatus: ${status}`); // Exibe a média e o status em um alerta
+  resultadomedia.textContent = `Média: ${media}\nStatus: ${status}`; // Atualiza o conteúdo do elemento HTML com o resultado
 }
 
 /*EXERCÍCIO 7 - I/O*/
