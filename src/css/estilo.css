@@ -1,89 +1,170 @@
-*{
-    padding: 0px;
-    gap: 0px;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-
+* {
+  padding: 0px;
+  margin: 0px;
+  gap: 0px;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
-body{
-    background: f4f4f4;
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(30, 13, 21);
+}
+body {
+  background: rgb(46, 23, 34);
+}
+main {
+  margin: 0 10%;
 }
 
-header{
-    display: flex;
-    background: rgb(78, 78, 194);
-    color: aliceblue;
-    justify-content: space-around;
-
-    
+section {
+  display: flex;
+  justify-content: center;
+}
+article {
+  width: 50%;
 }
 
-.exercicio{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    background-color: bisque;
-    border-radius: 20px;
-    margin: 20px;
-    
+header img {
+  width: 200px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #f2055c;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.exercicio-numero {
+  color: rgb(171, 171, 171);
+  font-size: small;
 }
 
 button {
-    background: #007BFF; /* azul */
-    color: white; /* texto branco */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-    
-  }
-  button:hover {
-    background-color: #0056b3; /* tom mais escuro */
-    transform: scale(1.02); /* leve aumento */
-    transition: all 0.3s ease;
-  }
+  margin-top: 20px;
+}
 
-  button:focus {
-    outline: 2px solid #0056b3;
-  }
-  button:active {
-    transform: scale(0.95);
-  }
+.exercicio {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: rgb(66, 44, 55);
+  color: rgb(222, 222, 222);
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: solid rgb(104, 68, 86);
+}
 
-ul{
-    list-style-type: disc;
-    padding-left: 40px; /* garante espaço para a bolinha */
+button {
+  background: #f2055c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: #a4003c;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+button:focus {
+  outline: 2px solid #0056b3;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
 }
 
 .output {
-    margin-top: 15px;
-    font-weight: bold;
- }
-
-
- label, input {
-    display: block;
-    margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
-footer{
-    background-color: 
+label,
+input {
+  display: block;
+  margin-bottom: 10px;
 }
 
-#svar{
-    color: blue;
-}
-#snome{
-    color: red;
+input {
+  padding: 10px 5px;
+  border-radius: 5px;
 }
 
-#strue{
-    color: green;
+#svar {
+  color: blue;
+}
+#snome {
+  color: red;
 }
 
-#scomando{
-    color: indigo;
+#strue {
+  color: green;
+}
+
+#scomando {
+  color: rgb(139, 35, 212);
+}
+
+footer {
+  background: rgb(30, 13, 21);
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  font-weight: bolder;
+}
+
+footer a {
+  color: white;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.github {
+  margin-top: 30px;
+  border-left: solid white ;
+  border-right: solid white;
+  padding: 0 3vw;
+  margin: 0 5vw;
+}
+.linkedin {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  line-height: 40px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.title h4 {
+  margin-left: 10px;
+}
+
+footer a:hover{
+    color: #f2055c;
+}
+footer img{
+    width: 300px;
 }

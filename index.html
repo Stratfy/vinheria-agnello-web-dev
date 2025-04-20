@@ -1,144 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>CP1- WEB/DEV</title>
     <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
     <header>
-        <h1>Stratfy - Web/Dev</h1>
+        <img src="./src/imagens/logo-stratfy.png" alt="">
     </header>
     <div id="content">
         <main>
-            <article class="exercicio">
-                <h1>Exercício 1 - Variável undefined </h1>
-                <ul>
-                    <li>Para declarar undefined - Declaração da variável sem atribuir um valor à ela, exemplo: <strong id="svar">tipo variável</strong> <strong id="snome"> nome</strong>;<br></li>
-                    <li>Para declarar vazio(void) - Declaração da variável com atribuição de nenhum char, exemplo: <strong id="svar">tipo variável</strong> <strong id="snome"> nome</strong> = "";<br></li>
-                    <li>Para declarar com valor - Declaração com o operador de atribuição <strong>=</strong> e o tipo de dado (int, float ...), exemplo: <strong id="svar">tipo variável</strong> <strong id="snome"> nome</strong> = dado;<br></li>
-                    <li><b>Saídas no console!</b><br></li>
-                    
-                </ul>  
-            </article>
-            
-            <article class="exercicio">
-                <h1>Exercício 2 - Como usar operadores relacionais</h1>
-                <ul>
-                    <li>Operador <b>!=</b> - Operador binário <b>Not Equal</b>, retorna <strong id="strue">Verdadeiro</strong> quando os elementos comparados são diferentes.<br></li>
-                    <li>Operador <b>==</b> - Operador binário <b>Equal to</b>, retorna <strong id="strue">Verdadeiro</strong> quando os elementos tem valores iguais, não compara o tipo.<br></li>
-                    <li>operador <b>>=</b> - Operador binário <b>Greater than or equal to</b>, maior que ou igual, retorna <strong id="strue">Verdadeiro</strong> quando o primeiro elemento (esquerda) é maior que o segundo (direita depois do operando) ou quando são iguais.</li>
-                    <li><b>Saídas no console!</b></li>
-                </ul>
-            </article>
+            <section>
+                <article class="exercicio">
+                    <p class="exercicio-numero">Exercício 1</p>
+                    <h1>Variável undefined </h1>
+                    <ul>
+                        <li>Para declarar undefined - Declaração da variável sem atribuir um valor à ela, exemplo: <strong
+                                id="svar">tipo variável</strong> <strong id="snome"> nome</strong>;<br></li>
+                        <li>Para declarar vazio(void) - Declaração da variável com atribuição de nenhum char, exemplo:
+                            <strong id="svar">tipo variável</strong> <strong id="snome"> nome</strong> = "";<br>
+                        </li>
+                        <li>Para declarar com valor - Declaração com o operador de atribuição <strong>=</strong> e o tipo de
+                            dado (int, float ...), exemplo: <strong id="svar">tipo variável</strong> <strong id="snome">
+                                nome</strong> = dado;<br></li>
+                        <li><b>Saídas no console!</b><br></li>
+    
+                    </ul>
+                </article>
+    
+                <article class="exercicio">
+                    <p class="exercicio-numero">Exercício 2</p>
+                    <h1>Como usar operadores relacionais</h1>
+                    <ul>
+                        <li>Operador <b>!=</b> - Operador binário <b>Not Equal</b>, retorna <strong
+                                id="strue">Verdadeiro</strong> quando os elementos comparados são diferentes.<br></li>
+                        <li>Operador <b>==</b> - Operador binário <b>Equal to</b>, retorna <strong
+                                id="strue">Verdadeiro</strong> quando os elementos tem valores iguais, não compara o
+                            tipo.<br></li>
+                        <li>operador <b>>=</b> - Operador binário <b>Greater than or equal to</b>, maior que ou igual,
+                            retorna <strong id="strue">Verdadeiro</strong> quando o primeiro elemento (esquerda) é maior que
+                            o segundo (direita depois do operando) ou quando são iguais.</li>
+                        <li><b>Saídas no console!</b></li>
+                    </ul>
+                </article>
+            </section>
 
-            <article class="exercicio">
-                <h1>Exercício 3 - IMC</h1>
-                <label for="peso">Peso (kg):</label>
-                <input type="number" id="peso" placeholder="Ex:70" step="0.1" min="1">
-                <label for="altura">Altura (m):</label>
-                <input type="number" id="altura" placeholder="Ex:1.80" step="0.01" min="1">
-
-                <button onclick="imc()">Calcular IMC</button>
-
-                <div class="output" id="resultado"></div>
-            </article>
-
-            <article class="exercicio">
-                <h1>Exercício 4 - 50 repetições </h1>
-                <p>Uso do comando da classe iteração <b>For</b>, sua estrutura consiste em:<br>
-                <strong id="scomando">for</strong>(<strong id="svar">declaração e atribuição</strong>; <b>operação </b>;<strong id="snome">incremento</strong>){bloco de código}<br>
-               <b>Saídas no console!</b>
-                </p>
-                <button onclick="exercicio4()">Executar exercício 4 no console</button>
-            </article>
-
-            <article class="exercicio">
-                <h1>Exercício 5 - Login</h1>
-                <p>
-                    Exercício com o uso de input por <b>prompt</b> e output por <b>alert.</b><br>
-                </p>
+            <section>
+                <article class="exercicio">
+                    <p class="exercicio-numero">Exercício 3</p>
+                    <h1>IMC</h1>
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" placeholder="Ex:70" step="0.1" min="1">
+                    <label for="altura">Altura (m):</label>
+                    <input type="number" id="altura" placeholder="Ex:1.80" step="0.01" min="1">
+    
+                    <button onclick="imc()">Calcular IMC</button>
+    
+                    <div class="output" id="resultado"></div>
+                </article>
+    
+                <article class="exercicio">
+                    <p class="exercicio-numero">Exercício 4</p>
+                    <h1>50 repetições </h1>
+                    <p>Uso do comando da classe iteração <b>For</b>, sua estrutura consiste em:<br>
+                        <strong id="scomando">for</strong>(<strong id="svar">declaração e atribuição</strong>; <b>operação
+                        </b>;<strong id="snome">incremento</strong>){bloco de código}<br>
+                        <b>Saídas no console!</b>
+                    </p>
+                    <button onclick="exercicio4()">Executar exercício 4 no console</button>
+                </article>
+            </section>
+           
+            <section>
+                <article class="exercicio">
+                    <p class="exercicio-numero">Exercício 5</p>
+                    <h1>Login</h1>
+                    <p>
+                        Exercício com o uso de input por <b>prompt</b> e output por <b>alert.</b><br>
+                    </p>
                     <button onclick="exercicio5()">Executar exercício 5 - Login</button>
-                
-            </article>
+    
+                </article>
+    
+                <article class="exercicio">
+                    <p class="exercicio-numero">Exercício 6</p>
+                    <h1>Média Notas</h1>
+                    Exercício de média, faz uso de iteração for para registrar as notas e retorna a média como alert, se for
+                    menor que 6 é reprovado.<br>
+                    <button onclick="exercicio6()">Executar exercício 6 - Média</button>
+                    <div class="output" id="resultadomedia"></div>
+                </article>
+    
+            </section>
+           
+            <section>
+                <article class="exercicio">
+                    <p class="exercicio-numero">Exercício 7</p>
+                    <h1>I/O mensagem </h1>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Ex: Luigi">
+    
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" placeholder="Ex: 18" min="1" step="1">
+    
+                    <label for="curso">Curso:</label>
+                    <input type="text" id="curso" placeholder="Ex: Engenharia de Software">
+    
+                    <label for="ano">Ano:</label>
+                    <input type="number" id="ano" placeholder="Ex: 1" min="1" step="1">
+    
+                    <button onclick="exercicio7()">Executar exercicio 7</button>
+    
+                    <pre class="output" id="resultadoex7"></pre>
+                </article>
 
-            <article class="exercicio">
-                <h1>Exercício 6 - Média Notas</h1>
-                Exercício de média, faz uso de iteração for para registrar as notas e retorna a média como alert, se for menor que 6 é reprovado.<br>
-                <button onclick="exercicio6()">Executar exercício 6 - Média</button>
-                <div class="output" id="resultadomedia"></div>
-            </article>
-
-            <article class="exercicio">
-                <h1>Exercício 7 - I/O mensagem </h1>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Ex: Luigi">
-                
-                <label for="idade">Idade:</label>
-                <input type="number" id="idade" placeholder="Ex: 18" min="1" step="1">
-                
-                <label for="curso">Curso:</label>
-                <input type="text" id="curso" placeholder="Ex: Engenharia de Software">
-
-                <label for="ano">Ano:</label>
-                <input type="number" id="ano" placeholder="Ex: 1" min="1" step="1">
-                
-                <button onclick="exercicio7()">Executar exercicio 7</button>
-                
-                <pre class="output" id="resultadoex7"></pre>
-            </article>
-
-            <article class="exercicio">
-                <h1>Exercício 8 - Métodos de String(Array de chars) </h1>
-                <p>
+                <article class="exercicio">
+                    <p class="exercicio-numero">Exercício 8</p>
+                    <h1>Métodos de String(Array de chars) </h1>
+                    <p>
                     <ul>
                         <h2>Métodos aprendidos em aula</h2>
                         <li><strong id="scomando">lenght</strong> - Retorna o número de caractéres de uma String</li>
                         <li><strong id="scomando">indexOf()</strong> - Retorna o índice dos caractéres na String</li>
-                        <li><strong id="scomando">lastIndexOf()</strong> - Retorna o útimo índice dos caractéres na String</li>
+                        <li><strong id="scomando">lastIndexOf()</strong> - Retorna o útimo índice dos caractéres na String
+                        </li>
                         <li><strong id="scomando">slice(inicio,final)</strong> - Recorta a String</li>
                     </ul>
-                    String que será manipulada: <strong id="snome">Tecnologia é um produto da ciência e da engenharia que 
-                    envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas.</strong><br>
-                </p>
-                <button onclick="exercicio8()">Executar exercicio 8</button>
-                <pre class="output" id="resultadoex8"></pre>
+                    String que será manipulada: <strong id="snome">Tecnologia é um produto da ciência e da engenharia que
+                        envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de
+                        problemas.</strong><br>
+                    </p>
+                    <button onclick="exercicio8()">Executar exercicio 8</button>
+                    <pre class="output" id="resultadoex8"></pre>
+    
+                    <h2>Procurador no texto (beta)</h2>
+                    <p>Representação gráfica do Método indexOf, limite - se a 145 Chars, não responsivo, use com tela cheia
+                        no PC para melhores resultados.</p>
+    
+                    <label for="textofrase">Insira a String que será manipulada:</label>
+                    <input type="text" id="textofrase" placeholder="Digite a frase"><br>
+                    <label for="chartexto">Insira os chars que serão buscados na string:</label>
+                    <input type="text" id="chartexto" placeholder="Texto a buscar"><br>
+                    <button onclick="indextexto()">Buscar</button>
+    
+                    <p id="resultadoindextexto"></p>
+                </article>
+            </section>
 
-                <h2>Procurador no texto (beta)</h2>
-                <p>Representação gráfica do Método indexOf, limite - se a 145 Chars, não responsivo, use com tela cheia no PC para melhores resultados.</p>
-                
-                <label for="textofrase">Insira a String que será manipulada:</label>
-                <input type="text" id="textofrase" placeholder="Digite a frase"><br>
-                <label for="chartexto">Insira os chars que serão buscados na string:</label>
-                <input type="text" id="chartexto" placeholder="Texto a buscar"><br>
-                <button onclick="indextexto()">Buscar</button>
-                
-                <p id="resultadoindextexto"></p>
-            </article>
-
-            <article class="exercicio">
-                <h1>Exercício 9 - String - Var</h1>
-                <p>O programa converte a variável inicialmente declarada como String para float e retorna seu tipo.<br>
-                <b>Esse programa também retorna no console!</b>
-                </p>
-                <button onclick="exercicio9()">Executar exercicio 9</button>
-            </article>   
+            <section>
+                <article class="exercicio">
+                    <p class="exercicio-numero">Exercício 9</p>
+                    <h1>String - Var</h1>
+                    <p>O programa converte a variável inicialmente declarada como String para float e retorna seu tipo.<br>
+                        <b>Esse programa também retorna no console!</b>
+                    </p>
+                    <button onclick="exercicio9()">Executar exercicio 9</button>
+                </article>
+            </section>      
         </main>
     </div>
 
     <footer>
         <p>Todos os exercícios estão comentados no arquivo script.js<br></p>
-        <a href="https://github.com/Stratfy">Grupo Stratfy</a>
-        <a href="https://github.com/sys0xFF">Anthony Sforzin</a>
-        <a href="https://github.com/CabriniJr">Luigi Cabrini</a> 
-        <a href="https://github.com/Rogerio-Arroyo">Rogério Arroyo</a>
-        <a href="https://github.com/thaynasimoes">Thayna Simões</a>
-        <a href="https://github.com/Bkfighte">Bruno K.</a>
-        
+
+        <div class="links">
+            <img src="./src/imagens/logo-stratfy.png" alt="">
+            <div class="github">
+                <div class="title">
+                    <i class="fa-brands fa-square-github fa-2x"></i>
+                    <h4>Nosso Github:</h4>
+                </div>
+                <a target="_blank" href="https://github.com/Stratfy">Grupo Stratfy</a>
+            </div>
+            <div class="linkedin">
+                <div class="title">
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                    <h4>Perfis no Linkedin dos participantes:</h4>
+                </div>
+                <a target="_blank" href="https://github.com/sys0xFF">Anthony Sforzin</a>
+                <a target="_blank" href="https://github.com/CabriniJr">Luigi Cabrini</a>
+                <a target="_blank" href="https://github.com/Rogerio-Arroyo">Rogério Arroyo</a>
+                <a target="_blank" href="https://github.com/thaynasimoes">Thayna Simões</a>
+                <a target="_blank" href="https://github.com/Bkfighte">Bruno K.</a>
+            </div>
+        </div>
+
     </footer>
 
-    
+
     <script src="src/js/script.js"></script>
 </body>
+
 </html>
