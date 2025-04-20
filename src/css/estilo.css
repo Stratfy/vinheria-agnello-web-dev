@@ -168,3 +168,9 @@ footer a:hover{
 footer img{
     width: 300px;
 }
+
+input:focus,
+button:focus {
+  outline: 2px solid #f2055c;
+  outline-offset: 2px;
+}
